@@ -37,7 +37,8 @@
 		"gitlab.gitlab-workflow",
 		"felixfbecker.php-debug",
 		"bmewburn.vscode-intelephense-client",
-		"mrmlnc.vscode-apache"
+		"mrmlnc.vscode-apache",
+		"tabnine.tabnine-vscode"
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.

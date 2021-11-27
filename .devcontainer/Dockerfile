@@ -40,12 +40,6 @@ RUN git clone https://github.com/ahmetb/kubectx /opt/kubectx && \
     wget https://github.com/bitnami-labs/sealed-secrets/releases/download/v0.16.0/kubeseal-linux-amd64 -o /usr/local/bin/kubeseal && chmod 755 /usr/local/bin/kubeseal 
 
 
-#RUN add-apt-repository ppa:ondrej/php
-#RUN apt-get update
-
-#RUN apt-get install -y php7.4
-
-#RUN apt-get update
 
 # Install Composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer --2

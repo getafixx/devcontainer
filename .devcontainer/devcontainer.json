@@ -4,7 +4,7 @@
 	"name": "PHP",
 	"build": {
 		"dockerfile": "Dockerfile",
-		"args": { 
+		"args": {
 			// Update VARIANT to pick a PHP version: 8, 8.0, 7, 7.4, 7.3
 			// Append -bullseye or -buster to pin to an OS version.
 			// Use -bullseye variants on local on arm64/Apple Silicon.
@@ -13,22 +13,21 @@
 		},
 	},
 	"runArgs": ["--init", "--privileged"],
-    "mounts": [
-        "source=dind-var-lib-docker,target=/var/lib/docker,type=volume",
-        "source=nts-profile,target=/home/vscode,type=volume",
-        "target=/home/vscode/.vscode-server,type=volume"
-    ],
-    "overrideCommand": false,
-	
+	"mounts": [
+		"source=dind-var-lib-docker,target=/var/lib/docker,type=volume",
+		"source=nts-profile,target=/home/vscode,type=volume",
+		"target=/home/vscode/.vscode-server,type=volume"
+	],
+	"overrideCommand": false,
+
 	// Set *default* container specific settings.json values on container create.
 	"settings": {
-        "php.validate.executablePath": "/usr/bin/php",
-        "files.autoSave": "afterDelay",
-        "files.autoSaveDelay": 1000,
-        "files.insertFinalNewline": true,
-        "files.trimFinalNewlines": true,
-        "terminal.integrated.shell.linux": "/bin/bash"
-    },
+		"php.validate.executablePath": "/usr/bin/php",
+		"files.autoSave": "afterDelay",
+		"files.autoSaveDelay": 1000,
+		"files.insertFinalNewline": true,
+		"files.trimFinalNewlines": true,
+	},
 
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
@@ -53,11 +52,7 @@
 	"remoteUser": "vscode",
 	"features": {
 		"docker-from-docker": "latest",
-		"kubectl-helm-minikube": "1.22",
 		"git": "os-provided",
-		"git-lfs": "latest",
 		"github-cli": "latest",
-		"golang": "1.17",
-		"rust": "1.55"
 	}
 }

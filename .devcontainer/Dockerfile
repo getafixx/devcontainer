@@ -25,7 +25,7 @@ RUN apt-get update -y && \
     unzip git unzip vim wget libmcrypt-dev libreadline-dev \
     bash-completion iputils-ping build-essential git-flow \
     ssh dos2unix ssmtp rsync awscli 
-    
+
 
 # Install Composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer --2
@@ -40,7 +40,7 @@ RUN apt-get update --fix-missing
 #RUN sed -i 's/post_max_size = 8M/post_max_size = 50M/' /etc/php/7.4/fpm/php.ini
 #RUN sed -i 's/upload_max_filesize = 2M/upload_max_filesize = 50M/' /etc/php/7.4/fpm/php.ini
 
-#WORKDIR /var/www/
+#WORKDIR /workspaces/code/
 
 # [Option] Install zsh
 ARG INSTALL_ZSH="true"

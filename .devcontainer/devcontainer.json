@@ -22,11 +22,18 @@
 
 	// Set *default* container specific settings.json values on container create.
 	"settings": {
-		"php.validate.executablePath": "/usr/bin/php",
+		"php.validate.executablePath": "/usr/local/bin/php",
 		"files.autoSave": "afterDelay",
 		"files.autoSaveDelay": 1000,
 		"files.insertFinalNewline": true,
 		"files.trimFinalNewlines": true,
+		"workbench.colorCustomizations": {
+			"tab.activeBorder": "#e5ff00",
+			"tab.activeBorderTop": "#509c2d",
+			"tab.unfocusedActiveBorder": "#5d119b",
+			"editorBracketMatch.background": "#0084ff",
+			"editorBracketMatch.border": "#15ff00"
+		}
 	},
 
 	// Add the IDs of extensions you want installed when the container is created.
